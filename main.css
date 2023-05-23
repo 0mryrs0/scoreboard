@@ -90,6 +90,12 @@ body {
     background-color: white;
     border: 2px solid rgba(0, 0, 0, 0.7);
     border-radius: 5px;
+    transition: 500ms;
+}
+
+.container button::hover {
+    background-color: black;
+    color: white;
 }
 
 .container p {
