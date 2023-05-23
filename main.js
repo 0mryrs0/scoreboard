@@ -2,7 +2,7 @@ let scoreTeamOne = document.getElementById("teamScore-1")
 let scoreTeamTwo = document.getElementById("teamScore-2")
 let pointsTeamOne = 0
 let pointsTeamTwo = 0
-
+let message = document.getElementById("message")
 //Team One Adding Points
 function AddOnePointTeamOne() {
     pointsTeamOne+=1
@@ -40,4 +40,21 @@ function resetScore() {
     pointsTeamTwo = 00
     scoreTeamOne.innerText = pointsTeamOne
     scoreTeamTwo.innerText = pointsTeamTwo
+    message.innerText = ""
+
+}
+
+function winner() {
+    if (pointsTeamOne > pointsTeamTwo)  {
+        message.innerText = "HOME TEAM WON! CONRATULATIONS!"
+    }
+
+    else if (pointsTeamTwo > pointsTeamOne) {
+        message.innerText = "GUEST TEAM WON! CONRATULATIONS!"
+    }
+
+    else {
+        message.innerText = "DRAW"
+    }
+
 }
