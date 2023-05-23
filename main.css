@@ -82,7 +82,11 @@ body {
     margin-top: 5px;
     background-color: black;
     border: 1px solid white;
-
+    transition: 500ms;
+}
+.container .scoreboard .team-number .points span:hover {
+    background-color: white;
+    color: black;
 }
 
 .container button {
